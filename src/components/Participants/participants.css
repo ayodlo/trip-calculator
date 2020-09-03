@@ -1,0 +1,136 @@
+.participants-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 144px;
+}
+
+.participants-form-container {
+    margin-top: 2rem;
+    background-color: #f5f5f5;
+    color: #141414;
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.participants-title {
+    margin: 1rem 0;
+}
+
+.container-form {   
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-list {
+    margin: 1rem;
+}
+
+.add-container {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    background-color: #f5f5f5;
+    width: 95%;
+    align-self: flex-start;
+    border: none;
+    border-bottom: .5px solid #313131;
+    outline: none;
+    margin-top: 2rem;
+    width: 200px;
+    height: 20px;
+    padding-right: 50px;
+    font-size: 16px;
+}
+
+.form-error-message,
+.input-instructions {
+    font-size: 10px;
+    width: 50%;
+    text-transform: none;
+}
+
+.form-error-message {
+    color: #ff2929;
+    margin: .4rem 0;
+}
+
+.input-instructions {
+    color: rgb(37, 37, 37);
+    margin-bottom: -1rem;
+    align-self: flex-start;
+}
+
+.add-participants-button,
+.add-button {
+    color: white;
+    border-radius: .2rem;
+    border: none;
+    padding: .5rem 1rem;
+    background: linear-gradient(to top left, #9ca5ae, #2f584a, #4a6437);
+    transition: all ease-in-out .5s;
+    transition: border ease-in-out 2s;
+}
+
+.add-participants-button:hover,
+.add-button:hover,
+.add-participants-button:active,
+.add-button:active {
+    cursor: pointer;
+    background: linear-gradient(to top left, #9ca5ae, #2f584a, #4a6437);
+}
+
+.add-participants-button {
+    margin-top: 2rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+}
+
+.add-participants-button:focus {
+    outline: none;
+}
+
+.add-button {
+    margin-left: 1rem;
+    width: 50px;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.participant-container {
+    display: flex;
+    align-items: center;
+    margin-left: -.5rem;
+}
+
+.removeIcon {
+    margin-right: .5rem;
+    color: red;
+    transition: color 250ms ease-in-out;
+}
+
+.removeIcon:hover {
+    color: rgb(255, 67, 67);
+    cursor: pointer;
+}
+
+@media(max-width: 640px) {
+    .center {
+        padding-top: 118px;
+    }
+}

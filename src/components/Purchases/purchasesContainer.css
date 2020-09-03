@@ -1,0 +1,182 @@
+
+
+.purchases-container {
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding-top: 144px;
+    padding-bottom: 4rem 0;
+}
+
+.purchases-title,
+.purchases-title-2 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    margin: 0;
+}
+
+.container-purchases__add-button {
+    margin: 2rem auto;
+}
+
+.add-item-input {
+    border: none;
+    background: whitesmoke;
+}
+
+.add-item-input:focus {
+    outline: none;
+}
+
+.purchases-button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.add-item-button:hover {
+    background-color: #2cd82c98;
+    cursor: pointer;
+}
+
+.add-item-input,
+.add-item-button {
+    -moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.view-owes-button,
+.add-item-button {
+    background: linear-gradient(to top left, #9ca5ae, #2f584a, #4a6437);
+    color: white;
+    transition: all .5s ease-in-out;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+    padding: 1rem 2rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.view-owes-button:hover,
+.add-item-button:hover,
+.view-owes-button:active,
+.add-item-button:active {
+    background: linear-gradient(to top left, #9ca5ae, #2f584a, #4a6437);
+}
+
+.view-owes-button {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+}
+
+.item-container__cost-input,
+.add-item-input {
+    font-size: 16px;
+}
+
+.purchases-items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 4rem;
+    height: 100%;
+}
+
+.item-container {
+    background: #f5f5f5;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+.item-container__group {
+    margin: 1rem 0;
+    position: relative;
+}
+
+.item-container__group-title {
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.item-container__cost-input {
+    margin: 0;
+}
+
+.removeIcon_purchase {
+    font-size: 2rem;
+    position: absolute;
+    top: -3rem;
+    right: -.5rem;
+    color: red;
+    transition: color 250ms ease-in-out;
+}
+
+.removeIcon_purchase:hover {
+    color: rgb(255, 67, 67);
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+._7ahQImyV4dj0EpcNOjnwA,
+.lhyQmCtWOINviMz0WG_gr   {
+    background: linear-gradient(to top left, #9ca5ae, #2f584a, #4a6437);
+}
+
+.dropDownBuyer {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%; /* useful when width is set to anything other than 100% */
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to top down, #ffffff, #d1d1d1);
+}
+
+select option:hover {
+    background: #3a5949;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
