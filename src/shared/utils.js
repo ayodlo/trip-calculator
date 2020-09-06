@@ -1,6 +1,7 @@
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+//*****React Utils******//
 //Toast Configuration & Toasts for Input Validators
 toast.configure();
 const toastConfiguration = {
@@ -38,4 +39,10 @@ export const titleInputValidator = (title, event) => {
         toast.error("⚠️ Please enter a title!", toastConfiguration);
     }
     return;
+}
+
+//*****Test Utilities******//
+export const findByTestAttr = (component, attr) => {
+    const wrapper = component.find(`[data-test='${attr}']`);
+    return wrapper;
 }
