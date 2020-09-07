@@ -8,6 +8,7 @@ import DropDownParticipants from './DropDownParticipants';
 
 //Dependencies
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import React, { Component, Fragment } from 'react';
 
 const mapStateToProps = state => {
@@ -71,6 +72,17 @@ class Purchases extends Component {
             });
         }
     }
+}
+
+Purchases.propTypes = {
+    //Declaring a proptypes for the purchases object
+    purchases: PropTypes.arrayOf(PropTypes.shape({
+        item: PropTypes.string,
+        cost: PropTypes.number,
+        buyer: PropTypes.string,
+        involved: PropTypes.array,
+        spit: PropTypes.number
+    }))
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Purchases);

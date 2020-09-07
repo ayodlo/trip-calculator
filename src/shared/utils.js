@@ -1,3 +1,4 @@
+import checkPropTypes from 'check-prop-types';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -45,4 +46,9 @@ export const titleInputValidator = (title, event) => {
 export const findByTestAttr = (component, attr) => {
     const wrapper = component.find(`[data-test='${attr}']`);
     return wrapper;
+}
+
+export const checkProps = (component, expectedProps) => {
+    const propsErr = checkPropTypes(component.propTypes, expectedProps, 'props', component.name);
+    return propsErr;
 }

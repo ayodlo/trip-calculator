@@ -4,6 +4,7 @@ import { calculateOwes, onTitleError, setTitleInput } from '../../actions';
 //Dependencies
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { titleInputValidator } from '../../shared/utils'
 
@@ -11,10 +12,8 @@ import { titleInputValidator } from '../../shared/utils'
 import './title.css';
 
 const mapStateToProps = (state) => {
-    console.log(state)
     return {
-        title: state.title,
-        errorMessage: state.errorMessage
+        title: state.title
     }
 }
 
@@ -35,9 +34,9 @@ export class Title extends Component {
                 <div className='title-page-center' data-test='title-page-center'>
                     <h1 className='title-page-header' data-test='title-page-header'>Trip-Calculator</h1>
                     <input placeholder='Trip Title'
-                        onChange={onChangeTitle}
                         className='title-page-input'
                         data-test='title-page-input'
+                        onChange={onChangeTitle}
                         value={title} />
                     <Link to='/participants'
                         onClick={(event) => titleInputValidator(title, event)}
@@ -46,6 +45,10 @@ export class Title extends Component {
             </div>
         )
     }
+}
+
+Title.propTypes = {
+    title: PropTypes.string
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Title);
