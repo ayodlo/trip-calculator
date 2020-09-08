@@ -42,7 +42,7 @@ export const titleInputValidator = (title, event) => {
     return;
 }
 
-//*****Test Utilities******//
+//*****Test Utils******//
 export const findByTestAttr = (component, attr) => {
     const wrapper = component.find(`[data-test='${attr}']`);
     return wrapper;

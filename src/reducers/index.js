@@ -19,7 +19,7 @@ import {
 //Dependencies
 import { combineReducers } from 'redux';
 
-const itemInputReducer = (state = '', action) => {
+export const itemInputReducer = (state = '', action) => {
     switch (action.type) {
         case SET_ITEM_INPUT:
             return action.payload;
@@ -30,14 +30,14 @@ const itemInputReducer = (state = '', action) => {
     }
 }
 
-const itemsReducer = (state = [], action) => {
+export const itemsReducer = (state = [], action) => {
     switch (action.type) {
         default:
             return state;
     }
 }
 
-const owesObjectReducer = (state = {}, action) => {
+export const owesObjectReducer = (state = {}, action) => {
     switch (action.type) {
         case CALCULATE_OWES:
             const initOwesObject = (purchases) => {
@@ -102,7 +102,7 @@ const owesObjectReducer = (state = {}, action) => {
     }
 }
 
-const participantReducer = (state = '', action) => {
+export const participantReducer = (state = '', action) => {
     switch (action.type) {
         case CHANGE_PARTICIPANT_INPUT:
             return action.payload;
@@ -113,7 +113,7 @@ const participantReducer = (state = '', action) => {
     }
 }
 
-const participantsReducer = (state = [], action) => {
+export const participantsReducer = (state = [], action) => {
     switch (action.type) {
         case ON_ADD_PARTICIPANT:
             return [...state, action.payload];
@@ -126,7 +126,7 @@ const participantsReducer = (state = [], action) => {
     }
 }
 
-const purchasesReducer = (state = [], action) => {
+export const purchasesReducer = (state = [], action) => {
     switch (action.type) {
         case CHANGE_BUYER:
             return state.map((purchase, index) => {
@@ -176,7 +176,7 @@ const purchasesReducer = (state = [], action) => {
     }
 }
 
-const titleInputReducer = (state = '', action = {}) => {
+export const titleInputReducer = (state = '', action = {}) => {
     switch (action.type) {
         case SET_TITLE_INPUT:
             return action.payload;
