@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { titleInputValidator } from '../../shared/utils'
+import { titleInputValidator } from '../../shared/utils';
 
 //CSS
 import './title.css';

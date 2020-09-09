@@ -13,33 +13,14 @@ const setUp = (props = {}) => {
 
 describe('Title Component', () => {
 
-    describe('Set Title Input Reducer', () => {
-
-        it('should return default state', () => {
-            const newState = titleInputReducer(undefined, {});
-            expect(newState).toEqual('');
-        })
-
-        it('should return new state if returning type', () => {
-            const newState = titleInputReducer(undefined, 
-                {
-                    type: SET_TITLE_INPUT, 
-                    payload: 'title input reducer test'
-                }
-            );
-            expect(newState).toEqual('title input reducer test');
-        })
-
-    })
-
     describe('Checking Prop Types', () => {
 
         it('should not throw a warning', () => {
-    
+
             const expectedProps = {
                 title: 'Test Title'
             };
-            const propsErr = checkProps (Title, expectedProps);
+            const propsErr = checkProps(Title, expectedProps);
             expect(propsErr).toBeUndefined();
 
         })
@@ -84,5 +65,24 @@ describe('Title Component', () => {
             wrapper = setUp();
         });
     });
+
+    describe('Checking Set Title Input Reducer', () => {
+
+        it('should return default state', () => {
+            const newState = titleInputReducer(undefined, {});
+            expect(newState).toEqual('');
+        })
+
+        it('should return new state if returning type', () => {
+            const newState = titleInputReducer(undefined,
+                {
+                    type: SET_TITLE_INPUT,
+                    payload: 'title input reducer test'
+                }
+            );
+            expect(newState).toEqual('title input reducer test');
+        })
+
+    })
 
 });
