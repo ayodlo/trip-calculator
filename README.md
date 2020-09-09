@@ -5,10 +5,10 @@
 
 ## Installation
 <ol>
-<li>npm install</li>
-<li>npm start</li>
+<li>run npm install</li>
+<li>run npm start</li>
 </ol>
 
 ## Testing
-<p>npm test</p>
-<p>still working on ui/integration tests for this project</p>
+<p>run npm test</p>
+<p>***Note I am still working on ui/integration tests for this project***</p>
