@@ -19,22 +19,24 @@ class App extends React.Component {
       <div>
         <BrowserRouter>
           <div className='container-main'>
-            <Route className='navigation' path='/' component={Navigation} />
-            <Route path='/' exact render={(props) =>
-              <Title />}
-            />
-            <Route path='/title' exact render={(props) =>
-              <Title />}
-            />
-            <Route path='/participants' exact render={(props) =>
-              <Participants />}
-            />
-            <Route path='/purchases' exact render={(props) =>
-              <PurchasesContainer />}
-            />
-            <Route path='/owes' exact render={(props) =>
-              <Owes />}
-            />
+            <div className='container-main-overlay'>
+              <Route className='navigation' path='/' component={Navigation} />
+              <Route path='/' exact render={(props) =>
+                <Title />}
+              />
+              <Route path='/title' exact render={(props) =>
+                <Title />}
+              />
+              <Route path='/participants' exact render={(props) =>
+                <Participants />}
+              />
+              <Route path='/purchases' exact render={(props) =>
+                <PurchasesContainer />}
+              />
+              <Route path='/owes' exact render={(props) =>
+                <Owes />}
+              />
+            </div>
           </div>
         </BrowserRouter>
       </div>
