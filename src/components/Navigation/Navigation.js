@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Navigation = () => {
 
     return (
-        <Fragment>
+        <Fragment className='nav-container-main'>
             <div className='nav-container'>
                 <div className='nav-left'>
                     <Link to='/' className='nav-left__item nav-link'><FontAwesomeIcon className='icon' icon='bus' /></Link>

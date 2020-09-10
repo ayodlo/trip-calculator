@@ -1,3 +1,7 @@
+.nav-container-main {
+  position: relative;
+}
+
 @media(min-width: 701px) {
 .nav-container-mobile {
     display: none;
