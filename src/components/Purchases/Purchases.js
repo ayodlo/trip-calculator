@@ -39,7 +39,6 @@ class Purchases extends Component {
         const { purchases, onDeletePurchase } = this.props;
         if (purchases) {
             return purchases.map((purchase, index) => {
-                console.log(purchase)
                 return (
                     <Fragment key={index}>
                         <div

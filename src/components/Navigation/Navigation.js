@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Navigation = () => {
 
     return (
-        <Fragment className='nav-container-main'>
+        <Fragment>
             <div className='nav-container'>
                 <div className='nav-left'>
                     <Link to='/' className='nav-left__item nav-link'><FontAwesomeIcon className='icon' icon='bus' /></Link>
@@ -24,8 +24,8 @@ const Navigation = () => {
             <div className='nav-container-mobile'>
                 <Menu width={ '50%' }>
                     <Link to='/' className='menu-item'>HOME</Link>
-                    <Link to='/purchases' className='menu-item'>PURCHASES</Link>
                     <Link to='/participants' className='menu-item'>PARTICIPANTS</Link>
+                    <Link to='/purchases' className='menu-item'>PURCHASES</Link>
                     <Link to='/owes' className='menu-item'>OWES</Link>
                 </Menu>
             </div>
